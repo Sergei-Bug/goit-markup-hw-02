@@ -1,4 +1,5 @@
 body {
+  font-family: Roboto;
   font-size: 16px;
   color: #2e2f42;
 }
@@ -10,9 +11,18 @@ ul {
   text-decoration: none;
 }
 
-.link {
+.list-nav a {
   text-decoration: none;
   color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.list-address a {
+  color: #434455;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -38,6 +48,8 @@ ul {
 
 .hero-title {
   color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
 }
 
 .btn-hero {
@@ -46,7 +58,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  border: none;
+  /* border: none; */
 }
 
 .btn-hero:hover {
@@ -58,7 +70,8 @@ ul {
 /* section-second */
 
 .list-second-section h2 {
-  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .list-second-section p {
@@ -67,7 +80,13 @@ ul {
 
 /* section-third */
 
-.section-third h2 {
+.title-third-section {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.img-third-section {
+  border: 1px solid #e7e9fc;
 }
 
 /* fourth-section */
@@ -76,13 +95,57 @@ ul {
   background-color: #f4f4fd;
 }
 
-.list-fourth-section p {
-  color: #434455;
-}
-
 .card {
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+.title-fourth-section {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.card h3 {
+  font-size: 20;
+  font-weight: 500;
+}
+
+.list-fourth-section p {
+  color: #434455;
+}
+
+/* portfolio */
+
+.filter-btn {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+  background-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
+.list-filters a {
+  text-decoration: none;
+}
+
+.list-filters h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.list-filters p {
+  font-weight: 400;
+  color: #434455;
 }
