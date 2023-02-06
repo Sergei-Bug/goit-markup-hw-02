@@ -1,7 +1,19 @@
+:root {
+  --color-primary: #4d5ae5;
+  --color-secondary: #404bbf;
+  --dark: #2e2f42;
+  --color-text: #434455;
+  --color-subtitle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --white: #ffffff;
+}
+
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
-  color: #2e2f42;
+  color: var(--dark);
+  letter-spacing: 0.02em;
 }
 
 /* header */
@@ -13,58 +25,68 @@ ul {
 
 .list-nav a {
   text-decoration: none;
-  color: #2e2f42;
+  color: var(--dark);
   font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 .list-address a {
-  color: #434455;
-  font-weight: 400;
+  color: var(--color-text);
   font-style: normal;
+  line-height: 24px;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   text-decoration: none;
-  color: #404bbf;
+  color: var(--color-secondary);
 }
 
 /* footer */
 
 .page-footer {
-  background-color: #2e2f42;
+  background-color: var(--dark);
 }
 
 .ft-p {
-  color: #e7e9fc;
+  color: var(--accent);
+  line-height: 24px;
 }
 
 /* Hero section */
 
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--dark);
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--white);
   font-size: 56px;
   font-weight: 700;
+  line-height: 60px;
 }
 
 .btn-hero {
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background: var(--color-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   cursor: pointer;
   /* border: none; */
 }
 
-.btn-hero:hover {
-  background: #404bbf;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.btn-hero:hover,
+.btn-hero:focus {
+  background: var(--color-secondary);
 }
 
 /* section-second */
@@ -72,10 +94,12 @@ ul {
 .list-second-section h2 {
   font-weight: 500;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .list-second-section p {
-  color: #434455;
+  color: var(--color-text);
+  line-height: 24px;
 }
 
 /* section-third */
@@ -83,56 +107,70 @@ ul {
 .title-third-section {
   font-weight: 700;
   font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
 }
 
 .img-third-section {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent);
 }
 
 /* fourth-section */
 
 .fourth-section {
-  background-color: #f4f4fd;
+  background-color: var(--light);
 }
 
-.card {
-  background: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-}
 .title-fourth-section {
   font-weight: 700;
   font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.card {
+  background: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card h3 {
   font-size: 20;
   font-weight: 500;
+  line-height: 24px;
 }
 
 .list-fourth-section p {
-  color: #434455;
+  color: var(--color-text);
+  line-height: 24px;
 }
 
 /* portfolio */
 
 .filter-btn {
-  font-family: Roboto;
+  font-family: inherit;
   font-weight: 500;
-  color: #4d5ae5;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+  background: var(--light);
+  border: 1px solid var(--accent);
   border-radius: 4px;
   cursor: pointer;
 }
 
-.filter-btn:hover {
-  color: #ffffff;
-  background-color: #404bbf;
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white);
+  background-color: var(--color-secondary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
+}
+
+.portfolio {
+  border: 1px solid var(--accent);
 }
 
 .list-filters a {
@@ -142,10 +180,12 @@ ul {
 .list-filters h2 {
   font-size: 20px;
   font-weight: 500;
-  color: #2e2f42;
+  color: var(--dark);
+  line-height: 24px;
 }
 
 .list-filters p {
   font-weight: 400;
-  color: #434455;
+  line-height: 24px;
+  color: var(--color-text);
 }
